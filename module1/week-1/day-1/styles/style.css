@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+/* this is how to target an id  */
+#some-cool-id {
+}
+.heading-1 {
+  color: rgb(67, 2, 35);
+}
+.heading-2 {
+  color: rgb(250, 0, 192);
+}
+/* this is how to target a class  */
+.small-image {
+  height: 200px;
+}
+.background-image {
+  background-image: url("../images/Ragnar.png");
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  text-align: center;
+  padding-top: 200px;
+}
