@@ -21,6 +21,7 @@ const amICrazy = false
 let hardwareSkills
 
 let age = null
+
 console.log(age)
 
 // MATH METHODS
@@ -66,3 +67,41 @@ console.log(
     favoriteBand[5].toUpperCase() +
     favoriteBand.slice(6),
 )
+
+console.log(
+  `My favorite band is ${
+    favoriteBand[0].toUpperCase() + favoriteBand.slice(1, 4)
+  } ${favoriteBand[5].toUpperCase() + favoriteBand.slice(6)}`,
+)
+
+console.log(1 + 2)
+console.log(1 - 2)
+console.log(2 / 1)
+console.log(2 * 2)
+console.log(2 ** 2)
+
+console.log(2 % 2 === 0)
+console.log(3 % 2 === 0)
+
+let num1 = 5
+
+console.log("is 5 lesser than 1", num1 < 1)
+
+num1 -= 4
+//num1 = num1 -5
+
+console.log("is 5 lesser than or equal to 1", num1 <= 1)
+
+console.log(0 || 0)
+console.log("" || 1)
+console.log(null || "a string")
+console.log(undefined || "another string")
+console.log(0 || 1)
+console.log(0 || 10)
+
+console.log(0 && 1)
+console.log(1 && 1)
+console.log("hello" && "")
+
+const isBald = true
+console.log("is Daniel not Bald " + !isBald)
