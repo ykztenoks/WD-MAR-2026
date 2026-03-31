@@ -1,0 +1,21 @@
+body {
+  background-color: black;
+  color: rgb(246, 246, 245);
+}
+.light-mode {
+  background-color: aliceblue;
+  color: black;
+}
+.pet-card img {
+  height: 100px;
+}
+.pet-card {
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5px;
+}
+.liked {
+  background-color: red;
+}
