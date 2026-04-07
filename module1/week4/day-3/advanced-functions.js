@@ -25,12 +25,12 @@ randomArr.forEach((currentElement) => {
 // forEach( () => {} ) anonymous arrow function as argument
 const objArr = [
   { name: "Daniel", age: 20 },
-  { name: "Noáh", age: 30 },
+  { name: "Noah", age: 30 },
   { name: "Danilo", age: 20 },
   { name: "Almas", age: 30 },
   { name: "Joiakim", age: 30 },
-  { name: "Búsola", age: 30 },
-  { name: "amanda", age: 30 },
+  { name: "Busola", age: 30 },
+  { name: "Amanda", age: 30 },
 ]
 
 const numArr = [1, 2, 3, 4, 5]
