@@ -12,7 +12,7 @@ class Game {
     this.obstacles = [new Obstacle()];
     this.projectiles = [];
     this.score = 0;
-    this.lives = 3;
+    this.lives = 1;
     this.gameIsOver = false;
     this.gameIntervalId = null;
     this.gameLoopFrequency = 1000 / 60;
@@ -29,56 +29,57 @@ class Game {
     //this shows the game screen
     this.gameScreen.style.display = "block";
     // //this will call the generate hearts method and add them to the game screen
-    // this.generateHarts();
+    this.generateHearts();
     //this starts the loop for the game
     this.gameIntervalId = setInterval(() => {
       this.gameLoop();
     }, this.gameLoopFrequency);
   }
-  // generateHarts() {
-  //   for (let i = 0; i < 3; i++) {
-  //     const hartImg = document.createElement("img");
-  //     if (i < this.lives) {
-  //       hartImg.src = "images/lives.png";
-  //     } else {
-  //       hartImg.src = "images/heart-empty.png";
-  //     }
-  //     hartImg.classList.add("hart");
-  //     this.livesElement.appendChild(hartImg);
-  //   }
-  // }
+  generateHearts() {
+    for (let i = 0; i < 3; i++) {
+      const heartImg = document.createElement("img");
+      if (i < this.lives) {
+        heartImg.src = "images/heart-full.png";
+      } else {
+        heartImg.src = "images/heart-empty.png";
+      }
+      heartImg.classList.add("heart");
+      this.livesElement.appendChild(heartImg);
+    }
+  }
   gameLoop() {
     this.update();
     //this checks when the game is over and if true then stops the game
     if (this.gameIsOver === true) {
       clearInterval(this.gameIntervalId);
       //when the game is over, store the score inside the local storage
-      // const highScoresFromLS = JSON.parse(localStorage.getItem("highScores"));
+      const highScoresFromLS = JSON.parse(localStorage.getItem("highScores"));
       // //the first time you play the game, you need to only set the high score
-      // if (!highScoresFromLS) {
-      //   localStorage.setItem("highScores", JSON.stringify([this.score]));
-      // } else {
-      //   highScoresFromLS.push(this.score);
-      //   //after you push the score, sort in desc order and slice the first 3
-      //   //sorting the highscores
-      //   highScoresFromLS.sort((a, b) => {
-      //     if (a > b) {
-      //       return -1;
-      //     } else if (a < b) {
-      //       return 1;
-      //     } else {
-      //       return 0;
-      //     }
-      //   });
-      //   const topThreeScores = highScoresFromLS.slice(0, 3);
-      //   localStorage.setItem("highScores", JSON.stringify([...topThreeScores]));
-      //   //this will update the DOM to show the three scores we stored
-      //   topThreeScores.forEach((oneScore) => {
-      //     const newLi = document.createElement("li");
-      //     newLi.innerText = oneScore;
-      //     this.highScoresElement.appendChild(newLi);
-      //   });
-      // }
+      if (!highScoresFromLS) {
+        localStorage.setItem("highScores", JSON.stringify([this.score]));
+      } else {
+        highScoresFromLS.push(this.score);
+        //after you push the score, sort in desc order and slice the first 3
+        //sorting the highscores
+        highScoresFromLS.sort((a, b) => {
+          if (a > b) {
+            return -1;
+          } else if (a < b) {
+            return 1;
+          } else {
+            return 0;
+          }
+        });
+        const topThreeScores = highScoresFromLS.slice(0, 3);
+        localStorage.setItem("highScores", JSON.stringify(topThreeScores));
+
+        //   //this will update the DOM to show the three scores we stored
+        topThreeScores.forEach((oneScore) => {
+          const newLi = document.createElement("li");
+          newLi.innerText = oneScore;
+          this.highScoresElement.appendChild(newLi);
+        });
+      }
     }
   }
 
@@ -102,6 +103,7 @@ class Game {
         this.lives--;
         this.livesElement.innerHTML = "";
         // this.livesElement.innerText = this.lives;
+        this.generateHearts();
         //play the horn sound on collision
         // this.horn.play();
       }
