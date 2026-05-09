@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.text-large {
+  @apply text-3xl text-amber-700;
+}
