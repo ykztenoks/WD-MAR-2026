@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.text-input {
+  @apply border rounded-md bg-gray-700 h-12 w-[30vw];
+}
