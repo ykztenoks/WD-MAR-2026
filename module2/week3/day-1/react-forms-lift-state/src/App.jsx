@@ -30,7 +30,13 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<Homepage users={users} isLoggedIn={isLoggedIn} />}
+            element={
+              <Homepage
+                users={users}
+                setUsers={setUsers}
+                isLoggedIn={isLoggedIn}
+              />
+            }
           />
 
           <Route
