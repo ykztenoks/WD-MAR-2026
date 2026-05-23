@@ -1,0 +1,96 @@
+{
+  "coffees": [
+    {
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "recipeName": "Espresso",
+      "ingredients": [
+        "18g finely ground coffee",
+        "30ml filtered water"
+      ],
+      "servings": 1,
+      "image": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a"
+    },
+    {
+      "id": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+      "recipeName": "Creamy Cappuccino",
+      "ingredients": [
+        "18g espresso ground coffee",
+        "60ml water",
+        "120ml whole milk",
+        "1 tsp sugar (optional)"
+      ],
+      "servings": 1,
+      "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d"
+    },
+    {
+      "id": "c3d4e5f6-a7b8-9012-cdef-123456789012",
+      "recipeName": "Vanilla Latte",
+      "ingredients": [
+        "18g espresso ground coffee",
+        "60ml water",
+        "240ml oat milk",
+        "2 tsp vanilla syrup"
+      ],
+      "servings": 1,
+      "image": "https://images.unsplash.com/photo-1561047029-3000c68339ca"
+    },
+    {
+      "id": "d4e5f6a7-b8c9-0123-defa-234567890123",
+      "recipeName": "Iced Caramel Macchiato",
+      "ingredients": [
+        "18g espresso ground coffee",
+        "60ml water",
+        "200ml milk",
+        "2 tbsp caramel syrup",
+        "ice cubes"
+      ],
+      "servings": 1,
+      "image": "https://www.averiecooks.com/wp-content/uploads/2017/11/caramelmacchiato-18.jpg"
+    },
+    {
+      "id": "e5f6a7b8-c9d0-1234-efab-345678901234",
+      "recipeName": "Cold Brew",
+      "ingredients": [
+        "100g coarse ground coffee",
+        "900ml cold filtered water"
+      ],
+      "servings": 4,
+      "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c"
+    },
+    {
+      "id": "a7b8c9d0-e1f2-3456-abcd-567890123456",
+      "recipeName": "Flat White",
+      "ingredients": [
+        "18g ristretto ground coffee",
+        "40ml water",
+        "120ml whole milk"
+      ],
+      "servings": 1,
+      "image": "https://images.unsplash.com/photo-1577968897966-3d4325b36b61"
+    },
+    {
+      "id": "b8c9d0e1-f2a3-4567-bcde-678901234567",
+      "recipeName": "Turkish Coffeeeeasfas",
+      "ingredients": [
+        "2 tsp finely ground Turkish coffee",
+        "150ml cold water",
+        "1 tsp sugar",
+        "2 cardamom pods (optional)"
+      ],
+      "servings": "2",
+      "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd"
+    },
+    {
+      "recipeName": "Instant Cold Coffee",
+      "image": "https://www.averiecooks.com/wp-content/uploads/2017/11/caramelmacchiato-18.jpg",
+      "servings": "1",
+      "ingredients": [
+        "Instant coffee",
+        "hot water",
+        "cold milk"
+      ],
+      "id": "d1c8b30c-c95f-429b-b225-be9f033e0a89"
+    }
+  ],
+  "comments": []
+}
