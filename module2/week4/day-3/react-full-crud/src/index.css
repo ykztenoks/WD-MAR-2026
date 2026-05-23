@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@keyframes fill {
+  0% {
+    box-shadow: 0 0 inset;
+  }
+  100% {
+    box-shadow: 0 -48px inset;
+  }
+}
+.loading {
+  @apply w-[48px] h-[48px] inline-block relative border-[4px] border-[solid] border-[#FFF] box-border animate-[fill_2s_linear_infinite_alternate] text-[rgba(255,_61,_0,_0.9)] rounded-tl-[0] rounded-br-[4px] rounded-tr-[0] rounded-bl-[4px] after:content-[''] after:box-border after:absolute after:left-full after:top-2/4 after:-translate-y-1/2 after:border-[4px] after:border-[solid] after:border-[#FFF] after:w-[20px] after:h-[25px] after:rounded-tl-[0] after:rounded-br-[4px] after:rounded-tr-[4px] after:rounded-bl-[0];
+}
+
+.input {
+  @apply border-2 border-slate-300 w-full p-2;
+}
+
+.create-input {
+  @apply border-2 border-slate-300 w-[50vw] p-2 rounded-md;
+}
